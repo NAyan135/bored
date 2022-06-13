@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styl.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    .topnav {
+      float: right;
+      text-decoration: none;
+      width:300px;
+    }
+    p {
+      float: left;
+      font-size: 18px;
+      font-color: ;
+    }
+    .div1 {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-450%, +5%);
+    }
+    .div2{   
+ 
+    float:left;   
+    }
+    .div4{
+      text-decoration: none;
+   font-size: 16px;
+   border: none;
+   padding: 3px;
+    dispaly: inline-block;
+    border-radius:8px;
+    float: center;
+    }
+    body {
+      background-cover: none;
+      background-color:brightblue;
+     }
+     img {   
+      width: 300px;
+      height: 300px;
+      float: right;
+      filter: blur(10px);
+     -webkit-filter: blur(10px);     
+     } 
+     img:hover{
+     opacity: 1;
+     filter: none;
+     
+     }
+     .sticky {
+     position: fixed;
+      top: 0;
+      width: 200px;
+      opacity: 100%;
+      overflow: hidden;
+      float: right;
+     }
+     .sticky  {
+     width: 200px;
+      border: auto;
+      border-radius: 8px;
+      opacity: 100%;
+      float:center;
+     }
+     .dropbtn{     
+      color: green;
+      width: auto;
+      height: auto;
+     text-decoration: none;
+      font-size: 16px;
+      border-radius: 6px;
+      padding:3px;
+     border: auto;
+     opacity:100%; 
+     float: right;    
+     }
+     center{
+     float:left;
+     }     
+     .dropbtn:hover{
+     color: gray;
+     }
+     #navbar {
+      overflow: hidden;
+     background-color: blue;
+     opacity:100%;
+     }
+  </style>
+</head>
+<body>
+  <div class="div2">
+ NAYAN
+  </div>
+  <div class="div4">
+    <nav class="dropbtn" id="navbar">
+  <center>
+    <a href="submit.html"  class="dropbtn"target="_blank">HOME </a>
+ <a href="" class="dropbtn">Contact</a>            
+  <a href="" class="dropbtn">About Us</a> 
+  </center>     
+  </div>
+  <br>
+ <div class="div1">
+  Hello <br>
+  ITS Me Nayan
+  </div>
+  <div>
+  <img src="frt.jpg" alt="NAYAN" value="hello">
+ </div>
+    <script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
